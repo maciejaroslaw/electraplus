@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/style/style.css"> -->
+    <link rel="stylesheet" href="/style/tailwind.css">
+    <link rel="stylesheet" href="./style/swiper-bundle.css">
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/rellax.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container ROBOTOSLAB">
+        <div class="content1 bg-ivory flex flex-col justify-between min-h-screen">
+            <div class="intro grid grid-cols-2 rellax" data-rellax-speed="-10">
+                <div class="pt-24 pl-16">
+                    <h1 class="text-6xl text-turk text-shadow-l">Electra Plus</h1>
+                    <div class="mt-8 text-xl text-turk pl-4">
+                        <p class="desc">
+                            <strong>Usługi Elektryczne</strong>
+                            <br>
+                            Dla klientów indywidualnych oraz firm.
+                        </p>
+                    </div>
+                </div>
+                <div class="pt-24 border w-1/2 mx-auto">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/1.svg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/2.svg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/3.svg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/4.svg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/5.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        effect: 'cube',
+                        loop: true,
+                        cubeEffect: {
+                            shadow: false,
+                            slideShadows: false,
+                        },
+                        autoplay: {
+                            delay: 4000
+                        }
+                        
+                    })
+                </script>
+            </div>
+            <div class="w-full">
+                <img style="filter: drop-shadow(.40em .2em .1em)" src="/img/wave.svg" alt="">
+            </div>
+        </div>
+        <div class="content2 min-h-screen bg-turk -mt-4 pt-8 relative z-10">
+            <div class="about">
+                <h2>O nas</h2>
+            </div>
+            <div></div>
+        </div>
+        <div class="content3"></div>
+        <div class="content4">
+            <div class="contactInfo">
+                <h2>Formularz Kontaktowy</h2>
+                <div class="icon">
+                    <div class="icon1"></div>
+                    <div class="icon2"></div>
+                </div>
+            </div>
+            <div class="contact">
+                <form>
+                    <div class="creds">
+                        <label>Imie i Nazwisko</label><br><input type="text" name="nameSurname">
+                        <br>
+                        <label>E-mail</label><br><input type="text" name="email">
+                        <br>
+                        <label>Numer Telefonu</label><br><input type="text" name="telNumber">
+                    </div>
+                    <div class="message">
+                        <label>Wiadomość</label><br><textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <br>
+                        <button class="submitButton">Wyślij!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./js/script.js"></script> -->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+</body>
+</html>
